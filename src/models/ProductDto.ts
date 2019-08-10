@@ -1,4 +1,4 @@
-export interface IWooCommerceProduct {
+export class ProductDto {
     id?: number;
     name?: string;
     slug?: string;

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import WooCommerceAPI from '@woocommerce/woocommerce-rest-api';
-import { IWooCommerceProduct } from '../../models/IWooCommerceProduct';
+import { ProductDto } from '../../models/ProductDto';
 import { ConfigService } from '../config.service';
 
 @Injectable()
@@ -16,8 +16,9 @@ export class WoocommerceService {
         });
     }
 
-    async createProduct(data: IWooCommerceProduct) {
-        return await this.wooCommerce.post("products", data);
+    async createProduct(data: ProductDto): Promise<ProductDto> {
+        const result = await this.wooCommerce.post("products", data);
+        return result.data as ProductDto;
     }
 
 }
