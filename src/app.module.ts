@@ -5,8 +5,6 @@ import { ProductController } from './api/product/product.controller';
 import { WoocommerceService } from './services/woocommerce/woocommerce.service';
 import { ConfigService } from './services/config.service';
 
-process.env.NODE_ENV = 'dev';
-
 @Module({
   imports: [],
   controllers: [AppController, ProductController],
@@ -14,7 +12,7 @@ process.env.NODE_ENV = 'dev';
     AppService,
     WoocommerceService, {
       provide: ConfigService,
-      useValue: new ConfigService(`${process.env.NODE_ENV}.env`),
+      useValue: new ConfigService(),
     }
   ],
   exports: [ConfigService],
