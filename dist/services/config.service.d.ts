@@ -1,5 +1,5 @@
 export declare class ConfigService {
     private readonly envConfig;
-    constructor(filePath: string);
+    constructor();
     get(key: string): string;
 }

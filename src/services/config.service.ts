@@ -4,7 +4,7 @@ import * as fs from 'fs';
 export class ConfigService {
     private readonly envConfig: { [key: string]: string };
 
-    constructor(filePath?: string) {
+    constructor() {
         if (process.env.NODE_ENV === "production") {
             this.envConfig = {
                 WOO_URL: process.env.WOO_URL,

@@ -1082,8 +1082,8 @@
         "signature": "2cba9752a0198d6c9cc96bc63463020f6a00de7d8f63cfd6a5eb35975662b09a"
       },
       "/users/sergei/git/wp-backend/src/services/config.service.ts": {
-        "version": "aa1b658eec7bf4ba989d30fe1a1403e2330a762db2296020cea000442104750e",
-        "signature": "dea784364101dba12f9ca72ef58b2fa4cc76309d1c6ab734f68439248a5b7553"
+        "version": "38a885a6ff7a15b51a79a1fa17a3b1c0fcabf164e12ae5e9f2d50dfd85dac18b",
+        "signature": "fa3fbedfb9842257b2e3538bb2a693e2c74387e4966492e1c787362e1fd8e0c1"
       },
       "/users/sergei/git/wp-backend/src/services/woocommerce/woocommerce.service.ts": {
         "version": "c20bff2f70d16776d3e6b27c438b5f9dd1c639a8d530583d731471f561d864c1",
@@ -1122,7 +1122,7 @@
         "signature": "d2412521d2ea9b8cfcfd6aa4fbe496e26440adad94b8020a2f0c9ea49bbc9fec"
       },
       "/users/sergei/git/wp-backend/src/app.module.ts": {
-        "version": "61d6407fbf507175f1922db663d1ddb0b39520a9db203bf20c96fce9c3e357b6",
+        "version": "55b8b2b60572c3aeb622876b978cdee37530b6d0867f5c494881b73033794a2b",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "/users/sergei/git/wp-backend/node_modules/@nestjs/core/adapters/http-adapter.d.ts": {

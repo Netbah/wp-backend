@@ -12,7 +12,6 @@ const app_service_1 = require("./app.service");
 const product_controller_1 = require("./api/product/product.controller");
 const woocommerce_service_1 = require("./services/woocommerce/woocommerce.service");
 const config_service_1 = require("./services/config.service");
-process.env.NODE_ENV = 'dev';
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -23,7 +22,7 @@ AppModule = __decorate([
             app_service_1.AppService,
             woocommerce_service_1.WoocommerceService, {
                 provide: config_service_1.ConfigService,
-                useValue: new config_service_1.ConfigService(`${process.env.NODE_ENV}.env`),
+                useValue: new config_service_1.ConfigService(),
             }
         ],
         exports: [config_service_1.ConfigService],
