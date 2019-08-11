@@ -16,9 +16,9 @@ let WoocommerceService = class WoocommerceService {
     constructor(config) {
         this.config = config;
         this.wooCommerce = new woocommerce_rest_api_1.default({
-            url: config.get('WOO_URL'),
-            consumerKey: config.get('WOO_CONSUMER_KEY'),
-            consumerSecret: config.get('WOO_COSUMMER_SECRET'),
+            url: this.config.get('WOO_URL'),
+            consumerKey: this.config.get('WOO_CONSUMER_KEY'),
+            consumerSecret: this.config.get('WOO_COSUMMER_SECRET'),
             wpAPI: true,
             version: 'wc/v1'
         });
