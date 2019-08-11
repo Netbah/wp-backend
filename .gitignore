@@ -3,8 +3,7 @@
 
 # compiled output
 /node_modules
-/src
-/test
+/dist
 
 
 # Logs
