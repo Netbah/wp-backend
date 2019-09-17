@@ -2,21 +2,24 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: node-backend
+  namespace: mixer
   labels:
-    app: wordpress
+    app: node-backend
+    tier: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wordpress
+      app: node-backend
       tier: backend
   template:
     metadata:
       labels:
-        app: wordpress
+        app: node-backend
+        tier: backend
     spec:
       containers:
-        - name: backend
+        - name: node-backend
           image: sbakhtoiarov/wp-backend:v1 # image we pushed
           ports:
             - containerPort: 3000
