@@ -20,6 +20,7 @@ spec:
     spec:
       containers:
         - name: node-backend
-          image: sbakhtoiarov/wp-backend:v1 # image we pushed
+          image: sbakhtoiarov/node-backend:v0.0.2
+          imagePullPolicy: "Always"
           ports:
             - containerPort: 3000
